@@ -1,0 +1,27 @@
+Inicio
+    puntos ← 0
+    juegoActivo ← Verdadero
+
+    Mientras juegoActivo Hacer
+        Generar pieza aleatoria
+
+        Mientras pieza no colisione Hacer
+            Leer movimiento
+            Mover o rotar pieza
+            Bajar pieza automáticamente
+        FinMientras
+
+        Fijar pieza al tablero
+
+        Si hay línea completa Entonces
+            Eliminar línea
+            puntos ← puntos + 100
+        FinSi
+
+        Si piezas llegan arriba Entonces
+            juegoActivo ← Falso
+        FinSi
+    FinMientras
+
+    Mostrar "Game Over"
+Fin

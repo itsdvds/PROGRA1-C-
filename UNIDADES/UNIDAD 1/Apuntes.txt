@@ -1,0 +1,37 @@
+Int/Integer Numeros enteros
+
+Double  Decimales
+Float   Decimales
+
+Strign/Char Letras y se usa con ""
+
+Console.Write (el usuario escribe) Writeline (La maquina escribe);
+
+if es cuando queremos dar una condicion tipo si tal es al
+
+else es para otros resultados no especificados
+
+bool es true or false osea 2 opciones;
+
+int x = int.Parse (Console.ReadLine()); se usa para darle identidad a lo que escribio el usuario
+
+// poner una nota
+
+C out salida
+
+C in entrada;
+
+
+cout << entero << endl (Parallel que tengs un espacio entre variables)
+
+
+% es para el residuo
+
+bool pene = true
+
+
+
+
+
+
+

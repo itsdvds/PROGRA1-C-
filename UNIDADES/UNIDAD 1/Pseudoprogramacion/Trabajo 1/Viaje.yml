@@ -1,0 +1,41 @@
+Problema: Viajar de guatemala a costa rica
+Accion: Inicio
+Accion: Buscar vuelos y costo del viaje
+Pregunta: ¿Puedo pagar la ida y el regreso?
+  Respuesta: Si
+    Ir a accion "Verificar pasaporte"
+  Respuesta: No
+    Accion: Ahorrar
+    Ir a accion "Verificar pasaporte"
+Accion: Verificar pasaporte
+Pregunta: ¿Tiene almenos 6 meses de vigencia?
+  Respuesta: Si
+    Ir a accion "Comprar"
+  Respuesta: No
+    Accion: Renovar
+    Ir a accion "Comprar"
+Accion: Comprar
+Accion: Ver cuantos dias me voy a ir
+Accion: Buscar un hotel
+Accion: Pagar el hotel
+Pregunta: ¿Ya debo ir al aeropuerto?
+  Respuesta: Si
+    Ir a accion "Ir al aeropuerto"
+  Respuesta: No
+    Accion: Esperar
+    Ir a Pregunta "¿Ya debo ir al aeropuerto?"
+Accion: Ir al aeropuerto
+Accion: Verificar hora del vuelo
+Accion: Hacer check in 
+Pregunta: ¿Es hora de subir al avión?
+  Respuesta: Si
+    Ir a accion "Subir al avión"
+    Respuesta: No
+    Accion: Esperar
+    Ir a Pregunta "¿Es hora de subir al avión?"
+Accion: Buscar asciento
+Accion: Llegar a costa rica
+Accion: Vajar del avión
+Accion: Pasar a migracion y aduanas
+Accion: Transportarme al hotel
+Accion: Fin

@@ -1,0 +1,14 @@
+Inicio JuegoArcade
+
+Seleccionar Juego
+
+Mientras juegoActivo Hacer
+    Leer EntradaJugador
+    ActualizarEstadoJuego
+    DetectarColisiones
+    ActualizarPuntaje
+    VerificarGameOver
+FinMientras
+
+Mostrar Resultado
+Fin

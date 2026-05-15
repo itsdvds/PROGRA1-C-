@@ -1,0 +1,44 @@
+
+Problema: Verter gasolina según tipo de vehículo
+Accion: Inicio
+Accion: Cliente llega a la gasolinera
+Accion: Indicar tipo de vehículo
+
+Pregunta: ¿Qué tipo de vehículo es?
+Respuesta: Carro
+Ir a pregunta “¿Qué tipo de gasolina usa?”
+Respuesta: Motocicleta
+Ir a pregunta “¿Qué tipo de gasolina usa?”
+Respuesta: Camión
+Ir a pregunta “¿Qué tipo de gasolina usa?”
+
+Pregunta: ¿Qué tipo de gasolina usa?
+Respuesta: Regular
+Accion: Seleccionar bomba de gasolina regular
+Ir a pregunta “¿Cuál será el tipo de pago?”
+Respuesta: Súper
+Accion: Seleccionar bomba de gasolina súper
+Ir a pregunta “¿Cuál será el tipo de pago?”
+Respuesta: Diésel
+Accion: Seleccionar bomba de diésel
+Ir a pregunta “¿Cuál será el tipo de pago?”
+
+Pregunta: ¿Cuántos quetzales o cuánto combustible desea?
+Accion: Configurar monto o litros en la bomba
+Accion: Verter gasolina en el vehículo
+
+Pregunta: ¿Cuál será el tipo de pago?
+Respuesta: Efectivo
+Accion: Recibir efectivo
+Accion: Entregar cambio si es necesario
+Ir a accion “Entregar comprobante”
+Respuesta: Tarjeta
+Accion: Procesar pago con tarjeta
+Ir a accion “Entregar comprobante”
+Respuesta: Transferencia
+Accion: Verificar transferencia
+Ir a accion “Entregar comprobante”
+
+Accion: Entregar comprobante
+Accion: Fin
+

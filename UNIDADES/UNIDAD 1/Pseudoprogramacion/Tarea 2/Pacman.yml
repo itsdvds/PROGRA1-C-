@@ -1,0 +1,20 @@
+Inicio
+    vidas ← 3
+    puntos ← 0
+
+    Mientras vidas > 0 Y puntos_restantes > 0 Hacer
+        Leer movimiento
+        Mover Pacman
+        Mover Fantasmas
+
+        Si Pacman toca punto Entonces
+            puntos ← puntos + 10
+        FinSi
+
+        Si Pacman toca fantasma Entonces
+            vidas ← vidas - 1
+        FinSi
+    FinMientras
+
+    Mostrar "Game Over"
+Fin

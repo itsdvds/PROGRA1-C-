@@ -1,0 +1,33 @@
+Problema: Configurar celular
+Accion: Inicio
+Accion: Sacarlo de la caja
+Pregunta: ¿Tiene batería?
+  Respuesta: Si
+    Ir a accion "Encender"
+  Respuesta: No
+    Accion: Cargar celular
+    Ir a accion "Encender"
+Accion: Encender
+Accion: Seleccionar idioma
+Accion: Seleccionar ubicación o región
+Accion: Conectar a internet
+Pregunta: ¿Tenemos correo para ingresar?
+  Respuesta: Si
+    Ir a accion "Ingresar correo"
+  Respuesta: No
+    Accion: Crear correo
+    Ir a accion "Ingresar correo"
+Accion: Ingresar correo
+Accion: Poner contraseña
+Accion: Aceptar términos y condiciones
+Pregunta: ¿Tenía otro teléfono antes?
+  Respuesta: Si
+    Pregunta: ¿Quiere trasladar sus datos?
+      Respuesta: Si
+        Accion: Trasladar información
+        Ir a accion "Fin"
+      Respuesta: No
+        Ir a accion "Fin"
+  Respuesta: No
+    Ir a accion "Fin"
+Accion: Fin

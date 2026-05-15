@@ -1,0 +1,26 @@
+Inicio
+    vidas ← 3
+    puntos ← 0
+
+    Mientras vidas > 0 Hacer
+        Leer movimiento jugador
+        Mover nave
+
+        Si jugador dispara Entonces
+            Crear bala
+        FinSi
+
+        Mover enemigos
+        Mover balas
+
+        Si bala toca enemigo Entonces
+            puntos ← puntos + 50
+        FinSi
+
+        Si enemigo toca jugador Entonces
+            vidas ← vidas - 1
+        FinSi
+    FinMientras
+
+    Mostrar "Game Over"
+Fin
